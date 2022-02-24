@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tirage au sort</title>
+    <script src="script.js"></script>
+    <style>
+        section{
+            margin-top: 40px;
+            margin-bottom: 40px;
+        }
+
+        h2{
+            font-size: 10rem;
+        }
+
+        @keyframes rotate {
+            from {transform: rotate(0deg);}
+            to {transform: rotate(360deg);}
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>
+            TIRAGE AU SORT 
+        </h1>
+    </header>
+    <section>
+        <form id="form">
+            <input type="text" class="prenom" placeholder="Prénom">
+            <button type="submit">ajouter participant</button>
+        </form>
+    </section>
+    <section>
+        <div class="display">
+
+        </div>
+    </section>
+    <section>
+        <button class="ausort">Tirer au sort</button>
+        <button class="plusde5lettres">Filtrer ( + de 5 lettres )</button>
+        <div class="result">
+            <h2></h2>
+        </div>
+    </section>
+</body>
+</html>
