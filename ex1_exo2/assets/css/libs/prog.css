@@ -1,0 +1,70 @@
+section.events {
+  display: flex;
+  flex-wrap: wrap;
+}
+section.events a {
+  text-decoration: none;
+}
+section.events a > div {
+  width: calc(25vw - 2px);
+  height: 25vw;
+  background-color: #131313;
+  position: relative;
+  border: 1px solid #65C2A8;
+}
+section.events a > div > div {
+  display: flex;
+  align-items: center;
+  height: 50%;
+  margin-left: 50px;
+}
+section.events a > div > div.info {
+  display: block;
+}
+section.events a > div > div.info p:first-child {
+  margin-bottom: 20px;
+}
+section.events a > div > div.info p:last-child i {
+  margin-right: 20px;
+}
+section.events a > div h2 {
+  color: white;
+}
+section.events a > div p {
+  color: #65C2A8;
+}
+section.events a > div i.plus {
+  display: none;
+  color: white;
+  font-size: 40px;
+}
+section.events a:hover > div {
+  background-image: url("../img/692628.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+section.events a:hover > div h2, section.events a:hover > div p {
+  display: none;
+}
+section.events a:hover > div i.plus {
+  display: block;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+@media screen and (max-width: 324px) {
+  section.events {
+    display: block;
+  }
+  section.events a > div {
+    width: calc(100vw - 2px);
+    height: 324px;
+  }
+}
+
+div.modal {
+  display: none;
+}
+
+/*# sourceMappingURL=prog.css.map */

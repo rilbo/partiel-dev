@@ -1,0 +1,51 @@
+header {
+  background-image: url("../img/351974.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 400px;
+  width: 100vw;
+  display: flex;
+}
+header i {
+  font-size: 40px;
+  color: white;
+}
+header > div {
+  width: 33.3333333333vw;
+}
+header > div ul {
+  padding: 20px;
+  display: flex;
+  gap: 30px;
+}
+header > div ul li {
+  list-style-type: none;
+}
+header > div:last-child ul {
+  justify-content: flex-end;
+}
+header div.logo {
+  display: flex;
+  justify-content: center;
+}
+header div.logo img {
+  height: 300px;
+  width: 300px;
+}
+@media screen and (max-width: 324px) {
+  header > div:last-child {
+    display: none;
+  }
+  header div.logo {
+    display: flex;
+    justify-content: center;
+  }
+  header div.logo img {
+    margin-top: 80px;
+    height: 150px;
+    width: 150px;
+  }
+}
+
+/*# sourceMappingURL=header.css.map */
